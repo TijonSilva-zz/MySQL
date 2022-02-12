@@ -136,7 +136,22 @@ alter table pessoas
  
  
  
- -- QUARTA AULA --
+ -- QUARTA AULA 
+
+ -- CRIANDO CHAVE ESTRANGEIRA 
+ use cadastro;
+ describe gafanhotos;
+ alter table gafanhotos add	cursopreferido int;
+ 
+ select * from gafanhotos;
+ select * from cursos;
+ 
+ alter table gafanhotos
+ add foreign key (cursopreferido)
+ references cursos(idcurso);
+ 
+ /*USANDO CHAVE ESTRANGEIRA */
+ update gafanhotos set cursopreferido = '6' where id = '1';
  
  
-   
+ 
