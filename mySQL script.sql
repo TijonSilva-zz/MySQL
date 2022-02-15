@@ -146,6 +146,10 @@ alter table pessoas
  select * from gafanhotos;
  select * from cursos;
  
+ select gafanhotos.nome, cursos.nome, cursos.ano
+ from gafanhotos join cursos
+ on cursos.idcurso = gafanhotos.cursopreferido;
+ 
  alter table gafanhotos
  add foreign key (cursopreferido)
  references cursos(idcurso);
