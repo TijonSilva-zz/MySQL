@@ -161,6 +161,20 @@ ramal char (9) not null,
 primary key (id)
 )default charset = utf8mb4 ;
 
+create table metrologia (
+id int not null auto_increment,
+nome varchar (30) not null,
+ramal char (9) not null,
+primary key (id)
+)default charset = utf8mb4 ;
+
+create table operacoes (
+id int not null auto_increment,
+nome varchar (30) not null,
+ramal char (9) not null,
+primary key (id)
+)default charset = utf8mb4 ;
+
 create table predial (
 id int not null auto_increment,
 nome varchar (30) not null,
@@ -325,3 +339,33 @@ insert into restaurante values
  insert into inspetoria values
  (default, 'Elias Ferreira', '4880-8295'),
  (default, 'Mauricio Silva', '4880-8293');
+
+insert into logistica values
+(default,'Guilherme Campos', '4880-8062');
+
+insert into juridico values 
+(default, 'Valeria Pastorin', '4880-8083');
+
+insert into metrologia values
+(default, 'Fernando Cavalcante', '4880-8251');
+
+insert into operacoes values
+(default, 'Marcos Alba', '4880-8083'),
+(default, 'Joao Oliveira', '4880-8240');
+
+insert into predial values 
+(default, 'Hugo Selmini', '4880-8054');
+
+insert into qualidade values
+(default, 'Renato Kenji', '4880-8222'),
+(default, 'Danielle Cenedese', '4880-8057'),
+(default, 'Sarah Maria', '4880-8058');
+
+insert into recebimento values
+(default, 'Joao Silva', '4880-8271'),
+(default, 'Gabriel Aposto', '4880-8271');
+
+insert into recepcao values
+(default, 'Rayani Ossiama', '4880-8002'),
+(default, 'Receção Pilotos', '4880-8002');
+
