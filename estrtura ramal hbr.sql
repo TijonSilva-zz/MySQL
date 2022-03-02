@@ -369,3 +369,28 @@ insert into recepcao values
 (default, 'Rayani Ossiama', '4880-8002'),
 (default, 'Receção Pilotos', '4880-8002');
 
+
+insert into salasreuniao values
+(default, 'Sala de reunião 1', '4880-8050'),
+(default, 'Sala de reunião 2', '4880-8182'),
+(default, 'Sala de reunião 3', '4880-8181'),
+(default, 'Sala de reunião 4', '4880-8175'),
+(default, 'Sala de reunião 5', '4880-8183'),
+(default, 'Sala de reunião 2º andar', '4880-8185');
+
+insert into salvatagem values
+(default, 'William Peterson', '4880-8276');
+
+insert into secretaria values
+(default, 'Ivanete Rodrigues', '4880-8130');
+
+insert into suprimentos values
+(default, 'Suprimentos', '4880-8059');
+
+insert into tecnologia	values
+(default, 'Eduardo Fleury', '4880-8151'),
+(default, 'Help Desk', '4880-8147');
+
+insert into tesouraria values
+(default, 'Jeannette Barreto', '4880-8136'),
+(default, 'Juan Nunes', '4880-8027');
