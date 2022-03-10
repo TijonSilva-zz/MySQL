@@ -97,10 +97,7 @@ $con31 = $mysqli -> query($consulta31) or die($mysqli -> error);
 
 $consulta32 = "SELECT * FROM tesouraria";
 $con32 = $mysqli -> query($consulta32) or die($mysqli -> error);
-
-
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -142,14 +139,22 @@ $con32 = $mysqli -> query($consulta32) or die($mysqli -> error);
           </ul>
         </li>
       </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
     </div>
-
+     <!--TITULO-->
     <div class="container-fluid">
     <span class="navbar-brand row d-flex justify-content-center h1">Lista de Ramais HBR Aviação</span>
   </div>
 </nav>
+ <!--TITULO-->
 
-<div style="margin: 100px;">
+ <!--TABELAS-->
+<div class="container">
+ <div class="row">
+   <div class="col-lg-6 ">
     <table class="table table-hover table-sm caption-top">
       <caption class="justify-content-center">Comercial VRT</caption>
         <thead class="table-dark">
@@ -167,10 +172,9 @@ $con32 = $mysqli -> query($consulta32) or die($mysqli -> error);
         <?php } ?>
     </table>
   </div>
-
-<div style="margin: 100px;">
+  <div class="col-lg-6">
     <table class="table table-hover table-sm caption-top">
-      <caption class="">Comercial Celula</caption>
+      <caption class="justify-content-center">Comercial Celula</caption>
         <thead class="table-dark">
           
         <tr>
@@ -186,7 +190,8 @@ $con32 = $mysqli -> query($consulta32) or die($mysqli -> error);
         <?php } ?>
     </table>
   </div>
-<div style="margin: 100px;">
+
+<div class="col-lg-6 ">
     <table class="table table-hover table-sm caption-top">
       <caption class="justify-content-center">Compras</caption>
         <thead class="table-dark">
@@ -204,7 +209,7 @@ $con32 = $mysqli -> query($consulta32) or die($mysqli -> error);
         <?php } ?>
     </table>
   </div>
-<div style="margin: 100px;">
+<div class="col-lg-6 ">
     <table class="table table-hover table-sm caption-top">
       <caption class="justify-content-center">Contabilidade</caption>
         <thead class="table-dark">
@@ -222,7 +227,7 @@ $con32 = $mysqli -> query($consulta32) or die($mysqli -> error);
         <?php } ?>
     </table>
   </div>
-<div style="margin: 100px;">
+<div class="col-lg-6 ">
     <table class="table table-hover table-sm caption-top">
       <caption class="justify-content-center">Contas a Receber</caption>
         <thead class="table-dark">
@@ -240,7 +245,7 @@ $con32 = $mysqli -> query($consulta32) or die($mysqli -> error);
         <?php } ?>
     </table>
   </div>
-<div style="margin: 100px;">
+<div class="col-lg-6 ">
     <table class="table table-hover table-sm caption-top">
       <caption class="justify-content-center">Controladoria</caption>
         <thead class="table-dark">
@@ -258,7 +263,7 @@ $con32 = $mysqli -> query($consulta32) or die($mysqli -> error);
         <?php } ?>
     </table>
   </div>
-<div style="margin: 100px;">
+<div class="col-lg-6 ">
     <table class="table table-hover table-sm caption-top">
       <caption class="justify-content-center">Controladoria Operacional</caption>
         <thead class="table-dark">
@@ -276,7 +281,7 @@ $con32 = $mysqli -> query($consulta32) or die($mysqli -> error);
         <?php } ?>
     </table>
   </div>
-<div style="margin: 100px;">
+<div class="col-lg-6 ">
     <table class="table table-hover table-sm caption-top">
       <caption class="justify-content-center">CTM</caption>
         <thead class="table-dark">
@@ -294,7 +299,7 @@ $con32 = $mysqli -> query($consulta32) or die($mysqli -> error);
         <?php } ?>
     </table>
   </div>
-<div style="margin: 100px;">
+<div class="col-lg-6 ">
     <table class="table table-hover table-sm caption-top">
       <caption class="justify-content-center">Diretoria</caption>
         <thead class="table-dark">
@@ -312,7 +317,7 @@ $con32 = $mysqli -> query($consulta32) or die($mysqli -> error);
         <?php } ?>
     </table>
   </div>
-<div style="margin: 100px;">
+<div class="col-lg-6 ">
     <table class="table table-hover table-sm caption-top">
       <caption class="justify-content-center">Engenharia</caption>
         <thead class="table-dark">
@@ -330,7 +335,7 @@ $con32 = $mysqli -> query($consulta32) or die($mysqli -> error);
         <?php } ?>
     </table>
   </div>
-<div style="margin: 100px;">
+<div class="col-lg-6 ">
     <table class="table table-hover table-sm caption-top">
       <caption class="justify-content-center">Estoque</caption>
         <thead class="table-dark">
@@ -348,7 +353,7 @@ $con32 = $mysqli -> query($consulta32) or die($mysqli -> error);
         <?php } ?>
     </table>
   </div>
-<div style="margin: 100px;">
+<div class="col-lg-6 ">
     <table class="table table-hover table-sm caption-top">
       <caption class="justify-content-center">Externo</caption>
         <thead class="table-dark">
@@ -366,7 +371,7 @@ $con32 = $mysqli -> query($consulta32) or die($mysqli -> error);
         <?php } ?>
     </table>
   </div>
-<div style="margin: 100px;">
+<div class="col-lg-6 ">
     <table class="table table-hover table-sm caption-top">
       <caption class="justify-content-center">Farmacia</caption>
         <thead class="table-dark">
@@ -384,7 +389,7 @@ $con32 = $mysqli -> query($consulta32) or die($mysqli -> error);
         <?php } ?>
     </table>
   </div>
-<div style="margin: 100px;">
+<div class="col-lg-6 ">
     <table class="table table-hover table-sm caption-top">
       <caption class="justify-content-center">Ferramentaria</caption>
         <thead class="table-dark">
@@ -402,7 +407,7 @@ $con32 = $mysqli -> query($consulta32) or die($mysqli -> error);
         <?php } ?>
     </table>
   </div>
-<div style="margin: 100px;">
+<div class="col-lg-6 ">
     <table class="table table-hover table-sm caption-top">
       <caption class="justify-content-center">Financeiro</caption>
         <thead class="table-dark">
@@ -420,7 +425,7 @@ $con32 = $mysqli -> query($consulta32) or die($mysqli -> error);
         <?php } ?>
     </table>
   </div>
-<div style="margin: 100px;">
+<div class="col-lg-6 ">
     <table class="table table-hover table-sm caption-top">
       <caption class="justify-content-center">Inspetoria </caption>
         <thead class="table-dark">
@@ -438,7 +443,7 @@ $con32 = $mysqli -> query($consulta32) or die($mysqli -> error);
         <?php } ?>
     </table>
   </div>
-<div style="margin: 100px;">
+<div class="col-lg-6 ">
     <table class="table table-hover table-sm caption-top">
       <caption class="justify-content-center">Juridico</caption>
         <thead class="table-dark">
@@ -456,7 +461,7 @@ $con32 = $mysqli -> query($consulta32) or die($mysqli -> error);
         <?php } ?>
     </table>
   </div>
-<div style="margin: 100px;">
+<div class="col-lg-6 ">
     <table class="table table-hover table-sm caption-top">
       <caption class="justify-content-center">Logística</caption>
         <thead class="table-dark">
@@ -474,7 +479,7 @@ $con32 = $mysqli -> query($consulta32) or die($mysqli -> error);
         <?php } ?>
     </table>
   </div>
-<div style="margin: 100px;">
+<div class="col-lg-6 ">
     <table class="table table-hover table-sm caption-top">
       <caption class="justify-content-center">Metrologia</caption>
         <thead class="table-dark">
@@ -492,7 +497,7 @@ $con32 = $mysqli -> query($consulta32) or die($mysqli -> error);
         <?php } ?>
     </table>
   </div>
-<div style="margin: 100px;">
+<div class="col-lg-6 ">
     <table class="table table-hover table-sm caption-top">
       <caption class="justify-content-center">Operações</caption>
         <thead class="table-dark">
@@ -510,7 +515,7 @@ $con32 = $mysqli -> query($consulta32) or die($mysqli -> error);
         <?php } ?>
     </table>
   </div>
-<div style="margin: 100px;">
+<div class="col-lg-6 ">
     <table class="table table-hover table-sm caption-top">
       <caption class="justify-content-center">Predial</caption>
         <thead class="table-dark">
@@ -528,7 +533,7 @@ $con32 = $mysqli -> query($consulta32) or die($mysqli -> error);
         <?php } ?>
     </table>
   </div>
-<div style="margin: 100px;">
+<div class="col-lg-6 ">
     <table class="table table-hover table-sm caption-top">
       <caption class="justify-content-center">Qualidade </caption>
         <thead class="table-dark">
@@ -546,7 +551,7 @@ $con32 = $mysqli -> query($consulta32) or die($mysqli -> error);
         <?php } ?>
     </table>
   </div>
-<div style="margin: 100px;">
+<div class="col-lg-6 ">
     <table class="table table-hover table-sm caption-top">
       <caption class="justify-content-center">Recebimento</caption>
         <thead class="table-dark">
@@ -564,7 +569,7 @@ $con32 = $mysqli -> query($consulta32) or die($mysqli -> error);
         <?php } ?>
     </table>
   </div>
-<div style="margin: 100px;">
+<div class="col-lg-6 ">
     <table class="table table-hover table-sm caption-top">
       <caption class="justify-content-center">Recepção</caption>
         <thead class="table-dark">
@@ -582,7 +587,7 @@ $con32 = $mysqli -> query($consulta32) or die($mysqli -> error);
         <?php } ?>
     </table>
   </div>
-<div style="margin: 100px;">
+<div class="col-lg-6 ">
     <table class="table table-hover table-sm caption-top">
       <caption class="justify-content-center">Restaurante </caption>
         <thead class="table-dark">
@@ -600,7 +605,7 @@ $con32 = $mysqli -> query($consulta32) or die($mysqli -> error);
         <?php } ?>
     </table>
   </div>
-<div style="margin: 100px;">
+<div class="col-lg-6 ">
     <table class="table table-hover table-sm caption-top">
       <caption class="justify-content-center">RH</caption>
         <thead class="table-dark">
@@ -618,25 +623,8 @@ $con32 = $mysqli -> query($consulta32) or die($mysqli -> error);
         <?php } ?>
     </table>
   </div>
-<div style="margin: 100px;">
-    <table class="table table-hover table-sm caption-top">
-      <caption class="justify-content-center">Salas de Reunião</caption>
-        <thead class="table-dark">
-          
-        <tr>
-            <td>Nome</td>
-            <td>Ramal</td>
-        </tr>
-        </thead>
-        <?php while ($dado = $con27 -> fetch_array()){ ?>
-        <tr>
-            <td><?php echo $dado["nome"]; ?></td>
-            <td><?php echo $dado["ramal"]; ?></td>
-        </tr>
-        <?php } ?>
-    </table>
-  </div>
-<div style="margin: 100px;">
+
+<div class="col-lg-6 ">
     <table class="table table-hover table-sm caption-top">
       <caption class="justify-content-center">Salvatagem</caption>
         <thead class="table-dark">
@@ -654,7 +642,7 @@ $con32 = $mysqli -> query($consulta32) or die($mysqli -> error);
         <?php } ?>
     </table>
   </div>
-<div style="margin: 100px;">
+<div class="col-lg-6 ">
     <table class="table table-hover table-sm caption-top">
       <caption class="justify-content-center">Secretaria</caption>
         <thead class="table-dark">
@@ -672,7 +660,7 @@ $con32 = $mysqli -> query($consulta32) or die($mysqli -> error);
         <?php } ?>
     </table>
   </div>
-<div style="margin: 100px;">
+<div class="col-lg-6 ">
     <table class="table table-hover table-sm caption-top">
       <caption class="justify-content-center">Suprimentos</caption>
         <thead class="table-dark">
@@ -690,7 +678,7 @@ $con32 = $mysqli -> query($consulta32) or die($mysqli -> error);
         <?php } ?>
     </table>
   </div>
-<div style="margin: 100px;">
+<div class="col-lg-6 ">
     <table class="table table-hover table-sm caption-top">
       <caption class="justify-content-center">T.I</caption>
         <thead class="table-dark">
@@ -708,7 +696,7 @@ $con32 = $mysqli -> query($consulta32) or die($mysqli -> error);
         <?php } ?>
     </table>
   </div>
-<div style="margin: 100px;">
+<div class="col-lg-6 ">
     <table class="table table-hover table-sm caption-top">
       <caption class="justify-content-center">Tesouraria</caption>
         <thead class="table-dark">
@@ -726,6 +714,27 @@ $con32 = $mysqli -> query($consulta32) or die($mysqli -> error);
         <?php } ?>
     </table>
   </div>
+  <div class="col-lg-6 ">
+    <table class="table table-hover table-sm caption-top">
+      <caption class="justify-content-center">Salas de Reunião</caption>
+        <thead class="table-dark">
+          
+        <tr>
+            <td>Nome</td>
+            <td>Ramal</td>
+        </tr>
+        </thead>
+        <?php while ($dado = $con27 -> fetch_array()){ ?>
+        <tr>
+            <td><?php echo $dado["nome"]; ?></td>
+            <td><?php echo $dado["ramal"]; ?></td>
+        </tr>
+        <?php } ?>
+    </table>
+  </div>
+ </div>
+</div>
+
 </body>
 <script src="./Bootstrap/js/bootstrap.js"></script>
 </html>
