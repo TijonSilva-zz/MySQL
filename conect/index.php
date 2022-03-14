@@ -116,13 +116,16 @@ $con32 = $mysqli -> query($consulta32) or die($mysqli -> error);
     <a class="navbar-brand" href="#">
         <img class="img-fluid" src="./images/hbrlogo.png" alt="Responsive image" width="40" height="40">
     </a>
+</div>
 <!-- //LOGO HBR -->
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+<div class="container-fluid">
+    <span class="position-fixed navbar-brand row d-flex justify-content-center h1">Lista de Ramais HBR Aviação</span>
+</div>
+
+    
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav  mb-4 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Inicio</a>
         </li>
@@ -139,17 +142,21 @@ $con32 = $mysqli -> query($consulta32) or die($mysqli -> error);
           </ul>
         </li>
       </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
     </div>
-     <!--TITULO-->
-    <div class="container-fluid">
-    <span class="navbar-brand row d-flex justify-content-center h1">Lista de Ramais HBR Aviação</span>
-  </div>
+    
+    <div class="">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    </div>
+   
+  <form class="d-flex">
+        <input class="form-control me-2 mx-5" type="search"  aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Ok</button>
+      </form>
 </nav>
- <!--TITULO-->
+
+
 
  <!--TABELAS-->
 <div class="container">
