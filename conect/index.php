@@ -109,54 +109,34 @@ $con32 = $mysqli -> query($consulta32) or die($mysqli -> error);
     <title>Ramais HBR</title>
 </head>
 <body>
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
-  <!-- LOGO HBR -->
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-        <img class="img-fluid" src="./images/hbrlogo.png" alt="Responsive image" width="40" height="40">
-    </a>
-</div>
-<!-- //LOGO HBR -->
-
-<div class="container-fluid">
-    <span class="position-fixed navbar-brand row d-flex justify-content-center h1">Lista de Ramais HBR Aviação</span>
-</div>
-
-    
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav  mb-4 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Setores
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">setor1</a></li>
-            <li><a class="dropdown-item" href="#">setor2</a></li>
-            <li><a class="dropdown-item" href="#">setor2</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">todos</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-    
-    <div class="">
+    <a class="navbar-brand" href="#">Navbar</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    </div>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-5 mb-0 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+        </li>
+      </ul>
+
+<div class="mx-auto">
+<span class=" d-flex navbar-brand row h1">Lista de Ramais - HBR Aviação</span>
+</div>
    
-  <form class="d-flex">
-        <input class="form-control me-2 mx-5" type="search"  aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Ok</button>
+
+
+      <form class="d-flex">
+        <input class="form-control me-2 " type="search" placeholder="Buscar" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">ok</button>
       </form>
+    </div>
+  </div>
 </nav>
-
-
 
  <!--TABELAS-->
 <div class="container">
