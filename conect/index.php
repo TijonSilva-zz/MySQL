@@ -130,8 +130,8 @@ $con32 = $mysqli -> query($consulta32) or die($mysqli -> error);
    
 
 
-      <form class="d-flex">
-        <input class="form-control me-2 " type="search" placeholder="Buscar" aria-label="Search">
+      <form class="d-flex" method="POST" action="./buscar.php">
+        <input class="form-control me-2 " type="text" name="BUSCAR" placeholder="Buscar" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">ok</button>
       </form>
     </div>
