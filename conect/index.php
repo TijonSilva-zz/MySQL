@@ -130,8 +130,8 @@ $con32 = $mysqli -> query($consulta32) or die($mysqli -> error);
    
 
 
-      <form class="d-flex" method="POST" action="./buscar.php">
-        <input class="form-control me-2 " type="text" name="BUSCAR" placeholder="Buscar" aria-label="Search">
+      <form class="d-flex" method="GET" action="./buscar.php">
+        <input class="form-control me-2 " type="text" name="busca" placeholder="Buscar" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">ok</button>
       </form>
     </div>
@@ -142,13 +142,13 @@ $con32 = $mysqli -> query($consulta32) or die($mysqli -> error);
 <div class="container">
  <div class="row">
    <div class="col-lg-6 ">
-    <table class="table table-hover table-sm caption-top">
+    <table class="table table-hover table-sm caption-top" border="2">
       <caption class="justify-content-center">Comercial VRT</caption>
         <thead class="table-dark">
           
         <tr>
-            <td>Nome</td>
-            <td>Ramal</td>
+            <th>Nome</th>
+            <th>Ramal</th>
         </tr>
         </thead>
         <?php while ($dado = $con -> fetch_array()){ ?>
@@ -160,13 +160,13 @@ $con32 = $mysqli -> query($consulta32) or die($mysqli -> error);
     </table>
   </div>
   <div class="col-lg-6">
-    <table class="table table-hover table-sm caption-top">
+    <table class="table table-hover table-sm caption-top" border="2">
       <caption class="justify-content-center">Comercial Celula</caption>
         <thead class="table-dark">
           
         <tr>
-            <td>Nome</td>
-            <td>Ramal</td>
+            <th>Nome</th>
+            <th>Ramal</th>
         </tr>
         </thead>
         <?php while ($dado = $con2 -> fetch_array()){ ?>
